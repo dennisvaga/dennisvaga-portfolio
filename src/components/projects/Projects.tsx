@@ -5,6 +5,7 @@ import { Project, type ProjectData } from "@/components/projects/Project";
 import { useTranslations } from "next-intl";
 import { SectionContainer } from "@/layouts/SectionContainer";
 import { useDirection } from "@/hooks/useDirection";
+import { cn } from "@/lib/utils";
 
 export function Projects() {
   const t = useTranslations("Projects");
@@ -19,41 +20,15 @@ export function Projects() {
       stack: [
         "Next.js",
         "TypeScript",
-        "ShadCN UI",
+        "ShadCN",
         "Auth.js",
         "TanStack Query",
         "React Hook Form",
-        "Vercel AI SDK",
-        "Express.js API",
-        "PostgreSQL",
-        "Prisma ORM",
+        "Vercel AI",
         "AWS S3",
-      ],
-      sections: [
-        {
-          name: t("projectData.bodyfuelShop.sections.ecommerce.name"),
-          description: t(
-            "projectData.bodyfuelShop.sections.ecommerce.description"
-          ),
-        },
-        {
-          name: t("projectData.bodyfuelShop.sections.aiChat.name"),
-          description: t(
-            "projectData.bodyfuelShop.sections.aiChat.description"
-          ),
-        },
-        {
-          name: t("projectData.bodyfuelShop.sections.authentication.name"),
-          description: t(
-            "projectData.bodyfuelShop.sections.authentication.description"
-          ),
-        },
-        {
-          name: t("projectData.bodyfuelShop.sections.productVariants.name"),
-          description: t(
-            "projectData.bodyfuelShop.sections.productVariants.description"
-          ),
-        },
+        "Express",
+        "PostgreSQL",
+        "Prisma",
       ],
       image: "/projects/bodyfuel/bodyfuel-shop-full.png",
       liveUrl: "https://shop.bodyfuel.dennisvaga.com/",
@@ -66,37 +41,36 @@ export function Projects() {
       stack: [
         "Next.js",
         "TypeScript",
-        "ShadCN UI",
-        "TanStack Table",
+        "ShadCN",
+        "Auth.js",
+        "TanStack Query",
         "React Hook Form",
-        "Express.js API",
-        "PostgreSQL",
-        "Prisma ORM",
+        "Vercel AI",
         "AWS S3",
-      ],
-      sections: [
-        {
-          name: t("projectData.bodyfuelAdmin.sections.dashboard.name"),
-          description: t(
-            "projectData.bodyfuelAdmin.sections.dashboard.description"
-          ),
-        },
-        {
-          name: t("projectData.bodyfuelAdmin.sections.inventory.name"),
-          description: t(
-            "projectData.bodyfuelAdmin.sections.inventory.description"
-          ),
-        },
-        {
-          name: t("projectData.bodyfuelAdmin.sections.orders.name"),
-          description: t(
-            "projectData.bodyfuelAdmin.sections.orders.description"
-          ),
-        },
+        "Express",
+        "PostgreSQL",
+        "Prisma",
       ],
       image: "/projects/bodyfuel/bodyfuel-admin-full.png",
       liveUrl: "https://admin.bodyfuel.dennisvaga.com/",
       githubUrl: "https://github.com/dennisvaga/bodyfuel",
+    },
+    {
+      id: "quick-shop",
+      title: t("projectData.quickShop.title"),
+      description: t("projectData.quickShop.description"),
+      stack: [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "NativeWind",
+        "TanStack Query",
+        "Expo Router",
+        "Zod",
+        "Lucide React Native",
+      ],
+      image: "/projects/quick-shop/main.png",
+      githubUrl: "https://github.com/dennisvaga/quick-shop",
     },
     // More projects can be added here in the future
   ];
@@ -110,10 +84,31 @@ export function Projects() {
           <p className="text-muted-foreground text-lg">{t("description")}</p>
         </div>
 
-        {/* Projects container - add space between each project */}
-        <div className="flex lg:flex-row flex-col gap-5">
-          {projects.map((project) => (
-            <Project key={project.id} project={project} />
+        {/* Projects container - responsive grid layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {projects.map((project, index) => (
+            <div
+              key={project.id}
+              className={cn(
+                "h-full", // Ensure consistent height
+                // Center the third project (index 2) when it's alone in the second row on md screens only
+                projects.length === 3 &&
+                  index === 2 &&
+                  "md:col-span-2 lg:col-span-1 md:flex md:justify-center lg:justify-start"
+              )}
+            >
+              <div
+                className={cn(
+                  "w-full h-full", // Full height for the inner container too
+                  // Limit width of centered third project to match others
+                  projects.length === 3 &&
+                    index === 2 &&
+                    "md:max-w-[calc(50%-0.625rem)] lg:max-w-full"
+                )}
+              >
+                <Project project={project} />
+              </div>
+            </div>
           ))}
         </div>
       </SectionContainer>

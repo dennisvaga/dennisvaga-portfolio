@@ -191,8 +191,9 @@
   --radius-xl: calc(var(--radius) + 4px);
 
    /* Hebrew-specific larger font sizes */
-  --font-size-he-sm: 1.1rem;
-  --font-size-he-base: 1.25rem;
+     --font-size-he-xs: 0.9rem;
+  --font-size-he-sm: 1.0rem;
+  --font-size-he-base: 1.20rem;
   --font-size-he-xl: 1.7rem;
   --font-size-he-2xl: 2.1rem;
   --font-size-he-3xl: 2.5rem;
@@ -253,6 +254,10 @@ html[dir="rtl"] .rtl-swap-margin {
 
 
 /* ---------- Hebrew font size adjustments ------------------- */
+
+html[lang="he"] .text-xs {
+  font-size: var(--font-size-he-xs);
+}
 
 html[lang="he"] .text-sm {
   font-size: var(--font-size-he-sm);

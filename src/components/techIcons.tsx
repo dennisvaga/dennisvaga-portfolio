@@ -12,8 +12,10 @@ import {
   SiPrisma,
   SiAmazon,
   SiOpenai,
+  SiExpo,
+  SiZod,
 } from "react-icons/si";
-import { TbApi, TbTable } from "react-icons/tb";
+import { TbApi, TbTable, TbBrandReactNative } from "react-icons/tb";
 
 export interface TechIcon {
   icon: React.ReactNode;
@@ -35,11 +37,11 @@ export const techStackIcons: Record<string, TechIcon> = {
     icon: <SiTypescript size={16} />,
     color: "hsl(var(--muted-foreground))",
   },
-  "ShadCN UI": {
+  ShadCN: {
     icon: <SiShadcnui size={16} />,
     color: "hsl(var(--muted-foreground))",
   },
-  "Tailwind CSS": {
+  Tailwind: {
     icon: <SiTailwindcss size={16} />,
     color: "hsl(var(--muted-foreground))",
   },
@@ -56,12 +58,40 @@ export const techStackIcons: Record<string, TechIcon> = {
     color: "hsl(var(--muted-foreground))",
   },
 
+  // Mobile Development
+  "React Native": {
+    icon: <TbBrandReactNative size={16} />,
+    color: "hsl(var(--muted-foreground))",
+  },
+  Expo: {
+    icon: <SiExpo size={16} />,
+    color: "hsl(var(--muted-foreground))",
+  },
+  NativeWind: {
+    icon: <SiTailwindcss size={16} />,
+    color: "hsl(var(--muted-foreground))",
+  },
+  "Expo Router": {
+    icon: <SiExpo size={16} />,
+    color: "hsl(var(--muted-foreground))",
+  },
+
+  // Validation & APIs
+  Zod: {
+    icon: <SiZod size={16} />,
+    color: "hsl(var(--muted-foreground))",
+  },
+  "Lucide React Native": {
+    icon: <FaReact size={16} />,
+    color: "hsl(var(--muted-foreground))",
+  },
+
   // Backend & APIs
   "Node.js": {
     icon: <FaNodeJs size={16} />,
     color: "hsl(var(--muted-foreground))",
   },
-  "Express.js API": {
+  Express: {
     icon: <SiExpress size={16} />,
     color: "hsl(var(--muted-foreground))",
   },
@@ -69,7 +99,7 @@ export const techStackIcons: Record<string, TechIcon> = {
     icon: <SiPostgresql size={16} />,
     color: "hsl(var(--muted-foreground))",
   },
-  "Prisma ORM": {
+  Prisma: {
     icon: <SiPrisma size={16} />,
     color: "hsl(var(--muted-foreground))",
   },
@@ -83,7 +113,7 @@ export const techStackIcons: Record<string, TechIcon> = {
     icon: <SiAuth0 size={16} />,
     color: "hsl(var(--muted-foreground))",
   },
-  "Vercel AI SDK": {
+  "Vercel AI": {
     icon: <SiOpenai size={16} />,
     color: "hsl(var(--muted-foreground))",
   },
