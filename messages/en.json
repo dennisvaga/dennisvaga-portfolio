@@ -1,0 +1,157 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": {
+      "en": "English",
+      "he": "Hebrew"
+    }
+  },
+  "ThemeToggle": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "Navigation": {
+    "about": "About",
+    "skills": "Skills",
+    "about-me": "About",
+    "projects": "Projects",
+    "work": "Work",
+    "contact": "Contact",
+    "hireMe": "Hire me",
+    "menu": "Menu",
+    "language": "Language",
+    "theme": "Theme"
+  },
+  "HeroSection": {
+    "role": "Full-Stack Web Developer",
+    "greeting": "Hello I'm",
+    "name": "Dennis Vaga",
+    "description": "I build modern web applications using React and Next.js. I specialize in responsive UIs, AI-powered solutions, and smart integrations that deliver exceptional user experiences.",
+    "getInTouch": "Get In Touch",
+    "viewMyWork": "View My Work"
+  },
+  "AboutMe": {
+    "title": "About Me",
+    "paragraph1": "I'm a full-stack web developer with over 7 years of experience building responsive, high-performing websites and web applications.",
+    "paragraph2": "I specialize in modern JavaScript frameworks like React and Next.js to create fast, SEO-friendly, and interactive web applications tailored to client needs.",
+    "paragraph3": "My work spans from frontend development to backend logic and automation — focusing on AI chatbot integration, interactive user experiences, and smart data solutions that adapt to real-time information.",
+    "paragraph4": "I focus on building digital experiences that are not just functional, but thoughtful — helping businesses move faster, smarter, and with clarity.",
+    "interests": "Personal Interests",
+    "interestItems": {
+      "coding": "Coding & Open Source",
+      "gym": "Fitness & Gym",
+      "music": "Music & Audio",
+      "gaming": "Gaming",
+      "coffee": "Coffee Appreciation"
+    }
+  },
+  "StatisticsBar": {
+    "years": "Years of experience",
+    "projects": "Projects completed",
+    "technologies": "Technologies mastered",
+    "coffeess": "Coffees Consumed ☕"
+  },
+  "MySkills": {
+    "title": "Skills",
+    "description": "These are the technologies I specialize in for building modern web applications.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend & APIs",
+      "tools": "Tools & Utilities"
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "description": "Here are some of the projects I've worked on recently.",
+    "liveDemo": "Live Demo",
+    "github": "GitHub",
+    "projectData": {
+      "bodyfuelShop": {
+        "title": "BodyFuel Shop",
+        "description": "A modern e-commerce platform for fitness supplements featuring AI-powered product discovery, secure authentication, and seamless shopping experience with advanced product variants support.",
+        "sections": {
+          "ecommerce": {
+            "name": "E-commerce Platform",
+            "description": "Complete online supplement store with product catalog browsing multiple categories including pre-workout, protein powders, creatine, vitamins, and fat burners. Features intuitive shopping cart and checkout process."
+          },
+          "aiChat": {
+            "name": "AI Product Discovery",
+            "description": "Intelligent chatbot powered by DeepSeek AI and Vercel AI SDK providing real-time product recommendations and streaming responses for enhanced customer experience and product discovery."
+          },
+          "authentication": {
+            "name": "Secure Authentication",
+            "description": "Robust authentication system using Auth.js with OAuth (Google) and email/password options, featuring role-based access control for customers and administrators."
+          },
+          "productVariants": {
+            "name": "Product Variants",
+            "description": "Advanced variant system supporting multiple flavors, sizes, and formulations with real-time inventory tracking and dynamic pricing for each variant configuration."
+          }
+        }
+      },
+      "bodyfuelAdmin": {
+        "title": "BodyFuel Admin",
+        "description": "Comprehensive administrative dashboard for managing the BodyFuel e-commerce platform, featuring advanced data tables, inventory control, order processing, and product management capabilities.",
+        "sections": {
+          "dashboard": {
+            "name": "Admin Dashboard",
+            "description": "Complete management interface with quick actions for daily operations and responsive design optimized for desktop and mobile administration of the supplement store."
+          },
+          "inventory": {
+            "name": "Product & Inventory Management",
+            "description": "Comprehensive product management with variant support, category organization, and integration with AWS S3 for image management. Includes bulk operations and inventory tracking."
+          },
+          "orders": {
+            "name": "Order Processing",
+            "description": "Advanced order management system with status tracking, detailed order views, and efficient data handling using TanStack Table for processing customer supplement orders."
+          }
+        }
+      },
+      "bodyfuelBackend": {
+        "title": "BodyFuel API",
+        "description": "Robust Express.js backend API powering the BodyFuel ecosystem with feature-based architecture, AI integrations, and comprehensive data management for the e-commerce platform.",
+        "sections": {
+          "api": {
+            "name": "RESTful API",
+            "description": "Complete REST API with endpoints for products, categories, orders, authentication, and customer management. Features comprehensive error handling and data validation."
+          },
+          "aiIntegration": {
+            "name": "AI Integration",
+            "description": "DeepSeek AI integration for intelligent product recommendations and real-time chat responses. Implements streaming capabilities for instant user feedback."
+          },
+          "architecture": {
+            "name": "Feature-based Architecture",
+            "description": "Modern backend architecture organizing code by business capabilities rather than technical layers, ensuring maintainability and scalability for enterprise-level applications."
+          }
+        }
+      }
+    }
+  },
+  "Contact": {
+    "title": "Let's Talk",
+    "description": "Interested in working together? Have an interesting project in mind?",
+    "getInTouch": "How to Reach Me",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "availability": "Availability",
+    "availabilityText": "I'm currently available for new projects - I'd love to hear from you!",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What's this about?",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project or inquiry...",
+      "send": "Send Message",
+      "sending": "Sending..."
+    }
+  }
+}
