@@ -32,19 +32,19 @@
     "role": "Full-Stack Web Developer",
     "greeting": "Hello I'm",
     "name": "Dennis Vaga",
-    "description": "I build modern web applications using React and Next.js. I specialize in responsive UIs, AI-powered solutions, and smart integrations that deliver exceptional user experiences.",
+    "description": "I build modern web and mobile applications using React, Next.js, and Node.js. I specialize in responsive UIs, AI-powered solutions, and smart integrations that deliver exceptional user experiences.",
     "getInTouch": "Get In Touch",
     "viewMyWork": "View My Work"
   },
   "AboutMe": {
     "title": "About Me",
-    "paragraph1": "I'm a full-stack web developer with over 7 years of experience building responsive, high-performing websites and web applications.",
+    "paragraph1": "I'm a full-stack web developer with 4+ years of experience building responsive, high-performing websites and web applications.",
     "paragraph2": "I specialize in modern JavaScript frameworks like React and Next.js to create fast, SEO-friendly, and interactive web applications tailored to client needs.",
-    "paragraph3": "My work spans from frontend development to backend logic and automation — focusing on AI chatbot integration, interactive user experiences, and smart data solutions that adapt to real-time information.",
+    "paragraph3": "My work spans from frontend development to backend logic and automation — focusing on AI chatbot integration, interactive user experiences, and smart data solutions with real-time capabilities.",
     "paragraph4": "I focus on building digital experiences that are not just functional, but thoughtful — helping businesses move faster, smarter, and with clarity.",
     "interests": "Personal Interests",
     "interestItems": {
-      "coding": "Coding & Open Source",
+      "coding": "Programming & Development",
       "gym": "Fitness & Gym",
       "music": "Music & Audio",
       "gaming": "Gaming",
@@ -74,11 +74,11 @@
     "projectData": {
       "bodyfuelShop": {
         "title": "BodyFuel Shop",
-        "description": "A modern e-commerce platform for fitness supplements featuring AI-powered product discovery, secure authentication, and seamless shopping experience with advanced product variants support.",
+        "description": "A full-stack e-commerce platform for fitness supplements built with Next.js, Express, and Prisma. Features AI-powered product discovery, secure authentication, and seamless shopping experience with advanced product variants support.",
         "sections": {
           "ecommerce": {
             "name": "E-commerce Platform",
-            "description": "Complete online supplement store with product catalog browsing multiple categories including pre-workout, protein powders, creatine, vitamins, and fat burners. Features intuitive shopping cart and checkout process."
+            "description": "Complete online supplement store with product catalog browsing multiple categories including pre-workout, post-workout, protein powders, creatine, vitamins, and fat burners. Features intuitive shopping cart and checkout process."
           },
           "aiChat": {
             "name": "AI Product Discovery",
@@ -140,7 +140,7 @@
     "phone": "Phone",
     "location": "Location",
     "availability": "Availability",
-    "availabilityText": "I'm currently available for new projects - I'd love to hear from you!",
+    "availabilityText": "I'm currently available for new opportunities and projects",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your full name",

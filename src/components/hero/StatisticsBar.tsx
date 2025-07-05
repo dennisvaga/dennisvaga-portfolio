@@ -36,9 +36,9 @@ export default function StatisticsBar({
   const t = useTranslations(namespace);
 
   const stats = [
-    { value: "7+", label: t("years") },
-    { value: "26", label: t("projects") },
-    { value: "11", label: t("technologies") },
+    { value: "4+", label: t("years") },
+    { value: "23", label: t("projects") },
+    { value: "8", label: t("technologies") },
     { value: "900+", label: t("coffeess") },
   ];
 
