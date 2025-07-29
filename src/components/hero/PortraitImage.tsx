@@ -38,8 +38,8 @@ const PortraitImage = ({ auraControls, isClient }: PortraitImageProps) => {
         fill
         alt=""
         className={`object-contain ${
-          isMobile ? "scale-140" : "scale-130"
-        } translate-y-9 pointer-events-none select-none`}
+          isMobile ? "scale-120" : "scale-115"
+        } translate-y-4 pointer-events-none select-none`}
         draggable={false}
       />
 
