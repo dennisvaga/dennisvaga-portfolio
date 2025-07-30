@@ -22,6 +22,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import { useDirection } from "@/hooks/useDirection";
 
 interface ProjectGalleryProps {
   images: string[];
@@ -31,6 +32,7 @@ interface ProjectGalleryProps {
 export function ProjectGallery({ images, projectTitle }: ProjectGalleryProps) {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
+  const { isRtl } = useDirection();
 
   React.useEffect(() => {
     if (!api) return;
@@ -60,6 +62,7 @@ export function ProjectGallery({ images, projectTitle }: ProjectGalleryProps) {
           opts={{
             align: "center",
             loop: true,
+            direction: isRtl ? "rtl" : "ltr",
           }}
         >
           <CarouselContent>
