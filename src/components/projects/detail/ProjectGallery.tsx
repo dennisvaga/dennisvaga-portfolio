@@ -56,7 +56,7 @@ export function ProjectGallery({ images, projectTitle }: ProjectGalleryProps) {
       <div className="relative">
         <Carousel
           setApi={setApi}
-          className="w-full max-w-4xl mx-auto"
+          className="w-full max-w-xl mx-auto"
           opts={{
             align: "center",
             loop: true,

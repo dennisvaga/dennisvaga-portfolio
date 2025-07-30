@@ -63,7 +63,7 @@ export function ProjectDetail({ project, children }: ProjectDetailProps) {
       <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[var(--page-bg-from)] via-[var(--page-bg-midpoint)] to-[var(--page-bg-to)]">
         {/* Background */}
 
-        <SectionContainer className="relative z-10 py-12 space-y-12">
+        <SectionContainer className="relative z-10 py-16 space-y-16">
           {/* Navigation */}
           <div className="flex items-center justify-between">
             <Button variant="ghost" asChild className="gap-2">
@@ -102,49 +102,44 @@ export function ProjectDetail({ project, children }: ProjectDetailProps) {
             </div>
           </div>
 
-          <div className="max-w-3xl">
-            {/* Project Header */}
-
-            <div className={`${textAlign.responsive} space-y-12`}>
-              <div>
-                <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-                  {project.title}
-                </h1>
-                {project.subtitle && (
-                  <p className="text-xl text-muted-foreground mb-6">
-                    {project.subtitle}
-                  </p>
-                )}
-                <p
-                  className={`text-lg leading-relaxed max-w-4xl ${textAlign.responsive}`}
-                >
-                  {project.description}
+          {/* Project Header */}
+          <div className={`${textAlign.responsive} space-y-10`}>
+            <div className="max-w-4xl">
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+                {project.title}
+              </h1>
+              {project.subtitle && (
+                <p className="text-xl text-muted-foreground mb-8">
+                  {project.subtitle}
                 </p>
-              </div>
+              )}
+              <p className={`text-lg leading-relaxed ${textAlign.responsive}`}>
+                {project.description}
+              </p>
+            </div>
 
-              {/* Tech Stack */}
-              <div className="flex flex-wrap gap-2">
-                {project.techStack.map((tech) => {
-                  const techIcon = getTechStackIcon(tech);
-                  return (
-                    <Badge
-                      key={tech}
-                      variant="secondary"
-                      className="text-sm px-3 py-1"
-                    >
-                      {techIcon && (
-                        <span
-                          className={`${isRtl ? "ml-2" : "mr-2"}`}
-                          style={{ color: techIcon.color }}
-                        >
-                          {techIcon.icon}
-                        </span>
-                      )}
-                      {tech}
-                    </Badge>
-                  );
-                })}
-              </div>
+            {/* Tech Stack */}
+            <div className="flex flex-wrap gap-2">
+              {project.techStack.map((tech) => {
+                const techIcon = getTechStackIcon(tech);
+                return (
+                  <Badge
+                    key={tech}
+                    variant="secondary"
+                    className="text-sm px-3 py-1"
+                  >
+                    {techIcon && (
+                      <span
+                        className={`${isRtl ? "ml-2" : "mr-2"}`}
+                        style={{ color: techIcon.color }}
+                      >
+                        {techIcon.icon}
+                      </span>
+                    )}
+                    {tech}
+                  </Badge>
+                );
+              })}
             </div>
           </div>
 

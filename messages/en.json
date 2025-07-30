@@ -137,17 +137,15 @@
     },
     "quickShop": {
       "title": "Quick Shop",
-      "subtitle": "React Native E-commerce Mobile Application",
-      "description": "A modern mobile shopping application built with React Native and Expo, featuring intuitive navigation, product browsing, and seamless user experience across iOS and Android platforms.",
+      "subtitle": "React Native E-commerce App",
+      "description": "A mobile-first e-commerce app built with React Native and Expo, featuring clean architecture, headless WordPress integration, and modern development practices for seamless cross-platform shopping experience.",
       "features": [
-        "Cross-platform mobile compatibility (iOS & Android)",
-        "Intuitive product browsing and categorization",
-        "Responsive and fluid user interface",
-        "Modern navigation patterns with Expo Router",
-        "Type-safe data validation with Zod",
-        "Efficient data fetching and caching",
-        "Native-like performance and animations",
-        "Clean and modern design system"
+        "Cross-platform mobile experience across iOS and Android with single codebase",
+        "Advanced product catalog with infinite scroll and hierarchical navigation",
+        "Modern architecture with TypeScript, Expo Router, and clean code patterns",
+        "Headless WordPress + WooCommerce integration for dynamic content management",
+        "Performance-optimized state management with offline support and caching",
+        "Built-in development tools with network diagnostics and debug screens"
       ]
     }
   },

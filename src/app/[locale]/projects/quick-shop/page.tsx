@@ -30,8 +30,6 @@ export default function QuickShopProjectPage() {
       t("features.3"),
       t("features.4"),
       t("features.5"),
-      t("features.6"),
-      t("features.7"),
     ],
     images: [
       "/projects/quick-shop/main.png",
