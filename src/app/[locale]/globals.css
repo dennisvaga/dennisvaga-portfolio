@@ -65,13 +65,15 @@
   --skills-bg-from: #f8faff;
   --skills-bg-midpoint: #f0f4ff; 
   --skills-bg-to: #ffffff;
-  --projects-bg: #fafbfc;
-  --contact-bg-from: #ffffff;
-  --contact-bg-midpoint: #f8faff;
-  --contact-bg-to: #f1f5ff;
+
   --hero-gradient-from: #ffffff;
   --hero-gradient-to: #f1f5ff;
   --hero-midpoint: #f8fbff;
+
+  /* page background - enhanced with more visual interest */
+  --page-bg-from: #fdfeff;
+  --page-bg-midpoint: #f4f8ff;
+  --page-bg-to: #eef4ff;
 
   /* Tech stack colors for spinning borders */
   --tech-react: 193 100% 62%;
@@ -138,16 +140,18 @@
   
   /* Section background */
   --about-bg: #1a1a20;
-  --projects-bg: #1e1e26;
-  --contact-bg-from: #1a1a20;
-  --contact-bg-midpoint: #1e1e26;
-  --contact-bg-to: #121218;
+
   --skills-bg-from: #121212;
   --skills-bg-midpoint: #1a1a1a;
   --skills-bg-to: #0f0f0f;
   --hero-gradient-from: oklch(59.15% 0.182 254.98 / 0.3);
   --hero-midpoint: oklch(0.21 0.006 285.885 / 0.8);
   --hero-gradient-to: oklch(0.141 0.005 285.823);
+
+  /* page background - enhanced with better contrast and depth */
+  --page-bg-from: #0a0b14;
+  --page-bg-midpoint: #151620;
+  --page-bg-to: #1f1f2e;
 }
 
 
@@ -250,6 +254,43 @@ html[dir="rtl"] .rtl-swap-margin {
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
 }
+
+/* Project detail page animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Stagger animation delays for child elements */
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
 
 
 

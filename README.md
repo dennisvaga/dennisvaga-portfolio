@@ -2,17 +2,17 @@
 
 A modern, responsive portfolio website built with Next.js 15, featuring internationalization (English/Hebrew), dark/light themes, and showcasing full-stack development projects.
 
-## ✨ Features
+## Features
 
-- **🌐 Internationalization**: Full support for English and Hebrew with RTL layout
-- **🎨 Modern Design**: Clean, professional design with dark/light theme switching
-- **📱 Responsive**: Optimized for all device sizes
-- **⚡ Performance**: Built with Next.js 15 and App Router for optimal performance
-- **📧 Contact Form**: Working contact form with email integration using Resend
-- **🔧 Type Safety**: Full TypeScript implementation
-- **📊 Projects Showcase**: Interactive project cards with live demos and tech stacks
+- **Internationalization**: Full support for English and Hebrew with RTL layout
+- **Modern Design**: Clean, professional design with dark/light theme switching
+- **Responsive**: Optimized for all device sizes
+- **Performance**: Built with Next.js 15 and App Router for optimal performance
+- **Contact Form**: Working contact form with email integration using Resend
+- **Type Safety**: Full TypeScript implementation
+- **Projects Showcase**: Interactive project cards with live demos and tech stacks
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -29,7 +29,7 @@ A modern, responsive portfolio website built with Next.js 15, featuring internat
 
 - **Resend** - Email service for contact form
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -86,7 +86,7 @@ A modern, responsive portfolio website built with Next.js 15, featuring internat
 5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000) to see the portfolio.
 
-## 📁 Project Structure
+## Project Structure
 
 This project follows a **feature-based architecture** inspired by [Bulletproof React](https://github.com/alan2207/bulletproof-react) for scalability and maintainability.
 
@@ -124,15 +124,15 @@ public/                  # Static assets
 └── projects/            # Project screenshots
 ```
 
-## 🌐 Internationalization
+## Internationalization
 
 The portfolio supports both English and Hebrew languages with proper RTL (Right-to-Left) layout for Hebrew. Language switching is available in the header.
 
-## 🎨 Theming
+## Theming
 
 Built-in dark and light theme support using `next-themes` with system preference detection.
 
-## 📧 Contact Form
+## Contact Form
 
 The contact form uses Resend for email delivery. Make sure to:
 
@@ -141,7 +141,7 @@ The contact form uses Resend for email delivery. Make sure to:
 3. Add it to your `.env.local` file
 4. Update the sender email in `src/app/api/send-email/route.ts` if needed
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 
@@ -156,7 +156,7 @@ The easiest way to deploy is using [Vercel](https://vercel.com/new):
 
 This is a standard Next.js application and can be deployed on any platform that supports Node.js.
 
-## 📜 Scripts
+## Scripts
 
 - `npm run dev` - Start development server with Turbopack
 - `npm run build` - Build for production

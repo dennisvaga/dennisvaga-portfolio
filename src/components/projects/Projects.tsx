@@ -1,3 +1,14 @@
+/**
+ * Projects Component
+ *
+ * Main projects section that displays all portfolio projects in a responsive grid.
+ * Features:
+ * - Responsive grid layout with smart third-item centering on medium screens
+ * - Project data management with translations support
+ * - Individual project cards with tech stack, images, and links
+ * - RTL support and accessibility considerations
+ * - Optimized layout for different screen sizes (mobile, tablet, desktop)
+ */
 "use client";
 
 import * as React from "react";
@@ -14,7 +25,7 @@ export function Projects() {
   // Project data using translations - add more projects here as needed
   const projects: ProjectData[] = [
     {
-      id: "bodyfuel-shop",
+      id: "bodyfuel",
       title: t("projectData.bodyfuelShop.title"),
       description: t("projectData.bodyfuelShop.description"),
       stack: [
@@ -30,7 +41,7 @@ export function Projects() {
         "PostgreSQL",
         "Prisma",
       ],
-      image: "/projects/bodyfuel/bodyfuel-shop-full.png",
+      image: "/projects/bodyfuel/bodyfuel-shop.png",
       liveUrl: "https://shop.bodyfuel.dennisvaga.com/",
       githubUrl: "https://github.com/dennisvaga/bodyfuel",
     },
@@ -51,7 +62,7 @@ export function Projects() {
         "PostgreSQL",
         "Prisma",
       ],
-      image: "/projects/bodyfuel/bodyfuel-admin-full.png",
+      image: "/projects/bodyfuel/bodyfuel-admin.png",
       liveUrl: "https://admin.bodyfuel.dennisvaga.com/",
       githubUrl: "https://github.com/dennisvaga/bodyfuel",
     },
@@ -76,8 +87,11 @@ export function Projects() {
   ];
 
   return (
-    <div id="projects" className="w-full bg-[var(--projects-bg)]">
-      <SectionContainer className="flex flex-col space-y-8">
+    <div
+      id="projects"
+      className="w-full bg-gradient-to-br from-[var(--page-bg-from)] via-[var(--page-bg-midpoint)] to-[var(--page-bg-to)]"
+    >
+      <SectionContainer className="flex flex-col space-y-20">
         {/* Section heading */}
         <div className={`${textAlign.responsive} flex flex-col gap-4`}>
           <h2 className="text-4xl font-bold tracking-tighter">{t("title")}</h2>
@@ -85,7 +99,7 @@ export function Projects() {
         </div>
 
         {/* Projects container - responsive grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-15">
           {projects.map((project, index) => (
             <div
               key={project.id}

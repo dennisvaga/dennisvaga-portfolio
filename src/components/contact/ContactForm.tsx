@@ -68,7 +68,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-[var(--contact-bg-from)] via-[var(--contact-bg-midpoint)] to-[var(--contact-bg-to)]">
+    <div className="bg-gradient-to-br from-[var(--page-bg-from)] via-[var(--page-bg-midpoint)] to-[var(--page-bg-to)]">
       <SectionContainer className={`${textAlign.responsive}`}>
         <div className="flex flex-col gap-8">
           {/* Header */}

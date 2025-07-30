@@ -71,6 +71,7 @@
     "description": "Here are some of the projects I've worked on recently.",
     "liveDemo": "Live Demo",
     "github": "GitHub",
+    "viewDetails": "View Details",
     "projectData": {
       "bodyfuelShop": {
         "title": "BodyFuel Shop",
@@ -88,6 +89,66 @@
         "title": "Quick Shop",
         "description": "A mobile e-commerce app built with React Native and Expo that connects to a headless WordPress/WooCommerce backend. Features complete product catalog, shopping cart functionality, and real-time data synchronization via REST API integration."
       }
+    }
+  },
+  "ProjectDetail": {
+    "backToProjects": "Back",
+    "liveDemo": "Live Demo",
+    "github": "GitHub",
+    "keyFeatures": "Key Features",
+    "projectApplications": "Project Applications",
+    "applicationsDescription": "This project consists of multiple applications working together to create a complete solution.",
+    "visit": "Visit",
+    "demoCredentials": "Demo Credentials",
+    "email": "Email",
+    "password": "Password"
+  },
+  "ProjectPages": {
+    "bodyfuel": {
+      "title": "BodyFuel",
+      "subtitle": "Full-Stack E-commerce Platform for Fitness Supplements",
+      "description": "A comprehensive monorepo e-commerce solution built with Next.js, Express, and Prisma, featuring AI-powered product discovery, real-time inventory management, and separate customer and administrative interfaces.",
+      "longDescription": "BodyFuel represents a complete fitness supplements e-commerce ecosystem built using modern web technologies. This project showcases advanced full-stack development skills including monorepo architecture, AI integration, real-time features, and comprehensive authentication systems.",
+      "features": [
+        "AI-Powered Product Chat with streaming responses",
+        "Multi-variant product support (flavors, sizes, formulations)",
+        "Comprehensive admin dashboard with business insights",
+        "Real-time inventory tracking and management",
+        "Secure authentication with OAuth and email/password",
+        "Responsive design optimized for mobile and desktop",
+        "Automated image storage with AWS S3",
+        "Advanced product filtering and search capabilities",
+        "Order management and processing system"
+      ],
+      "applications": {
+        "shop": {
+          "name": "BodyFuel Shop",
+          "description": "Customer-facing storefront with AI-powered product discovery, shopping cart, and secure checkout process. Features responsive design and real-time inventory updates."
+        },
+        "admin": {
+          "name": "BodyFuel Admin",
+          "description": "Comprehensive administrative dashboard for product management, order processing, inventory control, and business analytics with real-time insights."
+        },
+        "backend": {
+          "name": "API Backend",
+          "description": "Express-based REST API powering both frontend applications with feature-based architecture, authentication middleware, and AI integration endpoints."
+        }
+      }
+    },
+    "quickShop": {
+      "title": "Quick Shop",
+      "subtitle": "React Native E-commerce Mobile Application",
+      "description": "A modern mobile shopping application built with React Native and Expo, featuring intuitive navigation, product browsing, and seamless user experience across iOS and Android platforms.",
+      "features": [
+        "Cross-platform mobile compatibility (iOS & Android)",
+        "Intuitive product browsing and categorization",
+        "Responsive and fluid user interface",
+        "Modern navigation patterns with Expo Router",
+        "Type-safe data validation with Zod",
+        "Efficient data fetching and caching",
+        "Native-like performance and animations",
+        "Clean and modern design system"
+      ]
     }
   },
   "Contact": {
