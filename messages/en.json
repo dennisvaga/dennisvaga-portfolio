@@ -157,7 +157,7 @@
     "phone": "Phone",
     "location": "Location",
     "availability": "Availability",
-    "availabilityText": "I'm currently available for new opportunities and projects",
+    "availabilityText": "I'm available for new opportunities and projects",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your full name",
