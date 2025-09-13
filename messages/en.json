@@ -29,19 +29,19 @@
     "theme": "Theme"
   },
   "HeroSection": {
-    "role": "Full-Stack Web Developer",
-    "greeting": "Hello I'm",
+    "role": "Full Stack Web Developer",
+    "greeting": "Hello, I'm",
     "name": "Dennis Vaga",
-    "description": "I build modern web and mobile applications using React, Next.js, and Node.js. I specialize in responsive UIs, AI-powered solutions, and smart integrations that deliver exceptional user experiences.",
+    "description": "I’m a Full Stack developer focused on React and Next.js, with experience building responsive UIs and custom WordPress websites. Skilled in modern web technologies and creating end-to-end solutions that deliver strong user experiences.",
     "getInTouch": "Get In Touch",
     "viewMyWork": "View My Work"
   },
   "AboutMe": {
     "title": "About Me",
-    "paragraph1": "I'm a full-stack web developer with 4+ years of experience building responsive, high-performing websites and web applications.",
-    "paragraph2": "I specialize in modern JavaScript frameworks like React and Next.js to create fast, SEO-friendly, and interactive web applications tailored to client needs.",
-    "paragraph3": "My work spans from frontend development to backend logic and automation — focusing on AI chatbot integration, interactive user experiences, and smart data solutions with real-time capabilities.",
-    "paragraph4": "I focus on building digital experiences that are not just functional, but thoughtful — helping businesses move faster, smarter, and with clarity.",
+    "paragraph1": "I’m a Full Stack developer with 4+ years of experience building responsive, high-performing websites and applications.",
+    "paragraph2": "I work primarily with modern JavaScript frameworks like React and Next.js to create fast, SEO-friendly, and interactive web applications. I also have experience developing custom WordPress websites with HTML, CSS, and JavaScript.",
+    "paragraph3": "My work spans both frontend and backend development — from building clean user interfaces to implementing server-side logic and integrations.",
+    "paragraph4": "I aim to build digital experiences that are not only functional but also thoughtfully designed, helping businesses move faster and smarter.",
     "interests": "Personal Interests",
     "interestItems": {
       "coding": "Programming & Development",
