@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import Header from "@/layouts/header/Header";
 import Providers from "./Providers";
 import ScrollToTop from "@/components/ScrollToTop";
+import v_icon from "../../../public/v_icon.png";
 
 const JetBrainsMono = JetBrains_Mono({
   variable: "--font-jet-brains-mono",
@@ -35,6 +36,9 @@ export async function generateMetadata({
   return {
     title: `Dennis Vaga Portfolio – ${locale}`,
     description: "Professional portfolio website",
+    icons: {
+      icon: v_icon.src,
+    },
   };
 }
 
