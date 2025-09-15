@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useMediaQuery } from "@/hooks/use-media-query";
-import { useDevicePerformance } from "@/hooks/useDevicePerformance";
 import { getTechIcons, TechIcon } from "@/components/techIcons";
 
 interface UseOrbitingIconsProps {
@@ -19,7 +18,6 @@ export const useOrbitingIcons = ({
   isClient,
 }: UseOrbitingIconsProps) => {
   const isMobile = useMediaQuery("(max-width: 767px)");
-  const { isLowEndDevice } = useDevicePerformance();
   const radius = containerSize * 0.46;
   const containerRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -65,8 +63,7 @@ export const useOrbitingIcons = ({
     });
   }, [techIcons, containerSize, radius]);
 
-  // Animation configuration - simplified since useDevicePerformance handles all detection
-  const shouldAnimate = isVisible && !isLowEndDevice;
+  const shouldAnimate = isVisible;
 
   return {
     containerRef,
